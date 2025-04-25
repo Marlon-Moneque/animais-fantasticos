@@ -31,10 +31,6 @@ export default class ScrollAnima {
     }
     return this;
   }
-<<<<<<< HEAD
-=======
-  // remove o event de scroll
->>>>>>> main
   stop() {
     window.remove("scroll", this.checkDistance);
   }
