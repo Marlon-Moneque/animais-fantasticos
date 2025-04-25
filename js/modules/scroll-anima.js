@@ -13,11 +13,6 @@ export default class ScrollAnima {
       };
     });
   }
-<<<<<<< HEAD
-=======
-  // verifica a distancia em cada objeto
-  // em relacao ao scroll do site
->>>>>>> main
   checkDistance() {
     this.distance.forEach((item) => {
       if (window.pageYOffset > item.offset) {
