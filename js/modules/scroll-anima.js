@@ -4,7 +4,6 @@ export default class ScrollAnima {
     this.windowMetade = window.innerHeight * 0.6;
     this.checkDistance = this.checkDistance.bind(this);
   }
-
   getDistance() {
     this.distance = [...this.sections].map((section) => {
       const offset = section.offsetTop;
@@ -14,6 +13,11 @@ export default class ScrollAnima {
       };
     });
   }
+<<<<<<< HEAD
+=======
+  // verifica a distancia em cada objeto
+  // em relacao ao scroll do site
+>>>>>>> main
   checkDistance() {
     this.distance.forEach((item) => {
       if (window.pageYOffset > item.offset) {
@@ -32,6 +36,10 @@ export default class ScrollAnima {
     }
     return this;
   }
+<<<<<<< HEAD
+=======
+  // remove o event de scroll
+>>>>>>> main
   stop() {
     window.remove("scroll", this.checkDistance);
   }
