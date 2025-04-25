@@ -31,6 +31,7 @@ export default class ScrollAnima {
     }
     return this;
   }
+  // remove a animacao scroll
   stop() {
     window.remove("scroll", this.checkDistance);
   }
